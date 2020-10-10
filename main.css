@@ -1,8 +1,25 @@
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+}
+h3 {
+    margin: auto; 
+    margin-right: auto;
+    margin-left: auto;
+    padding: 5px;
+    max-width: 200px;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    left: 0;
+    background-color: #d34c26;
+    color: whitesmoke;
+    display: inline-block;
+    font-size: 25px;
 }
 
+/* HEADER/ HERO  SECTION  */
 header {
     background-image: url("./jr-korpa-wzkv5p5CIRk-unsplash.jpg");
     background-size: cover;
@@ -13,7 +30,7 @@ header {
 
 .profile-picture {
     border-radius: 50%;
-    height: 270px;
+    height: 250px;
     border: 6px solid;
     position: absolute;
     right: 40px;
@@ -32,4 +49,96 @@ header {
     margin: 10px;
     padding: 5px;
 }
+.hero-elements {
+    position: relative;
+}
+ .name-header{
+     position: absolute;
+     font-family: 'Roboto', sans-serif;
+     font-size: 25px;
+     top: 170px;
+     left: 10px;
+ }
+ .claudia-name {
+     font-family: 'Montserrat', sans-serif;
+     font-weight: lighter;
+ }
+ .header-info {
+     position: absolute;
+     font-size: 35px;
+     font: bold;
+     top: 175px;
+     left: 10px;
+     margin: 0;
+ }
 
+ /* Summary SECTION  */
+.summary {
+    background-color: whitesmoke;
+    height: 300px;
+    margin: 0;
+}
+.summary p {
+    padding: 20px;
+    text-align: center;
+    margin: 0;
+    position: relative;
+    top: 75px;
+    max-width: 650px;
+}
+
+/* TECH SECTION  */
+.tech {
+    margin: 0;
+    background-color: #adccc7;
+    height: 300px;
+    text-align: center;
+    position: relative;
+}
+    .tech p {
+    position: absolute;
+    top: 120px;
+}
+/* FEATURED PROJECTS + OTHER SECTION*/
+.featured-projects {
+    margin: 0;
+    background-color: whitesmoke;
+    height: 300px;
+    text-align: center;
+    position: relative;
+}
+
+.other {
+    margin: 0;
+    background-color: whitesmoke;
+    height: 300px;
+    text-align: center;
+    position: relative;
+}
+.other h3 {
+    background-color: whitesmoke;
+    color: #d34c26 ;
+}
+/* MY THOUGHTS SECTION */
+.my-thoughts {
+    margin: 0;
+    background-color: #adccc7;
+    height: 300px;
+    text-align: center;
+    position: relative;
+}
+
+.skills {
+    margin: 0;
+    background-color: whitesmoke;
+    height: 300px;
+    text-align: center;
+    position: relative;
+}
+footer {
+    margin: 0;
+    background-color: #144c52;
+    height: 150px;
+    position: relative;
+
+}

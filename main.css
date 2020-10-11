@@ -17,6 +17,7 @@ h3 {
     color: whitesmoke;
     display: inline-block;
     font-size: 25px;
+    font-weight: lighter;
 }
 
 /* HEADER/ HERO  SECTION  */
@@ -103,9 +104,7 @@ header {
 .featured-projects {
     margin: 0;
     background-color: whitesmoke;
-    height: 300px;
     text-align: center;
-    position: relative;
 }
 
 .other {
@@ -123,22 +122,51 @@ header {
 .my-thoughts {
     margin: 0;
     background-color: #adccc7;
-    height: 300px;
-    text-align: center;
+    height: 550px;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-
+.my-thoughts iframe {
+    height: 50%;
+    position: absolute;
+}
+/* SKILLS SECTION */
 .skills {
     margin: 0;
+    height: 600px; 
     background-color: whitesmoke;
-    height: 300px;
     text-align: center;
     position: relative;
 }
+.skill-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    position: inherit;
+    top: 100px;
+}
+.skill-list {
+    display: flex;
+    flex-direction: column;  
+}
+.skill-container h4 {
+    color: #d34c26
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+/* FOOTER */
 footer {
     margin: 0;
+    padding: 10px;
     background-color: #144c52;
+    color: white;
     height: 150px;
     position: relative;
+    text-align: center;
 
 }

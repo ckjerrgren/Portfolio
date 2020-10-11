@@ -100,11 +100,55 @@ header {
     position: absolute;
     top: 120px;
 }
-/* FEATURED PROJECTS + OTHER SECTION*/
-.featured-projects {
+/*FEATURED PROJECTS + OTHER SECTION*/
+ .featured-projects {
     margin: 0;
     background-color: whitesmoke;
     text-align: center;
+    position: relative;
+    overflow: hidden;
+    
+}
+.featured-container a {
+    margin-bottom: 25px;
+    text-decoration: none;
+    color: black;
+}
+.featured-container {
+    margin: 30px;
+    position: relative;
+    top: 150px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 350px;
+    height: 300;
+    margin: 10px 20px;
+    text-align: left;
+}
+.card img {
+    width: 300px;
+    object-fit: cover;
+}
+.card h4 {
+    margin: 10px;
+    color: #d34c26;
+    font-family: 'Roboto', sans-serif;
+}
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tags p {
+    background-color: #fddfe7;
+    font-size: 17px;
+    padding: 5px;
+    margin-right: 13px;
+    margin-top: 10px;
 }
 
 .other {
@@ -116,7 +160,7 @@ header {
 }
 .other h3 {
     background-color: whitesmoke;
-    color: #d34c26 ;
+    color: #d34c26 ; 
 }
 /* MY THOUGHTS SECTION */
 .my-thoughts {

@@ -2,6 +2,10 @@ body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
     font-weight: lighter;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
 }
 h3 {
     margin: auto; 
@@ -30,7 +34,10 @@ header {
 }
 
 .profile-picture {
+
     border-radius: 50%;
+    object-fit: cover;
+    width: 250px;
     height: 250px;
     border: 6px solid;
     position: absolute;
@@ -77,11 +84,14 @@ header {
 .summary {
     background-color: whitesmoke;
     height: 300px;
+    width: 100%;
     margin: 0;
+    display: flex;
+    align-content: center;
+    justify-content: center;
 }
 .summary p {
     padding: 20px;
-    text-align: center;
     margin: 0;
     position: relative;
     top: 75px;
@@ -92,8 +102,11 @@ header {
 .tech {
     margin: 0;
     background-color: #adccc7;
-    height: 300px;
-    text-align: center;
+    min-height: 300px;
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
     position: relative;
 }
     .tech p {
@@ -104,10 +117,12 @@ header {
  .featured-projects {
     margin: 0;
     background-color: whitesmoke;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start ;
     position: relative;
-    overflow: hidden;
-    
+    height: auto;
+    width: 100%;
 }
 .featured-container a {
     margin-bottom: 25px;
@@ -124,9 +139,9 @@ header {
 }
 
 .card {
-    width: 350px;
+    width: auto;
     height: 300;
-    margin: 10px 20px;
+    margin-top: 10px;
     text-align: left;
 }
 .card img {
@@ -155,18 +170,21 @@ header {
     margin: 0;
     background-color: whitesmoke;
     height: 300px;
+    width: 100%;
     text-align: center;
     position: relative;
 }
 .other h3 {
     background-color: whitesmoke;
-    color: #d34c26 ; 
+    color: #d34c26 ;
+    position: absolute; 
 }
 /* MY THOUGHTS SECTION */
 .my-thoughts {
     margin: 0;
     background-color: #adccc7;
     height: 550px;
+    width: 100%;
     position: relative;
     display: flex;
     align-items: center;
@@ -179,7 +197,8 @@ header {
 /* SKILLS SECTION */
 .skills {
     margin: 0;
-    height: 600px; 
+    height: 650px; 
+    width: 100%;
     background-color: whitesmoke;
     text-align: center;
     position: relative;
@@ -210,7 +229,31 @@ footer {
     background-color: #144c52;
     color: white;
     height: 150px;
+    width: 100%;
     position: relative;
     text-align: center;
-
 }
+
+/* MEDIA */
+@media (min-width: 667px)  {
+    .featured-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 3rem;
+    }
+    .featured-projects {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+    }
+    .project-description {
+        max-width: 300px;
+    }
+    .social-media {
+        top: 300px;
+        left: 60px;
+        
+    }
+  }
+  
+  
